@@ -100,7 +100,7 @@ GROUP BY 1
 ORDER BY COUNT(*) DESC
 LIMIT 1;
 
--- Q14. 
+-- Q14. How many Netflix titles were added per year in India, and what percentage do they represent out of all Indian content?
 SELECT
 	EXTRACT(YEAR FROM TO_DATE(date_added, 'Month DD, YYYY')) as year,
 	COUNT(*) as yearly_content,
